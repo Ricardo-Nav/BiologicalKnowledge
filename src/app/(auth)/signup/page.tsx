@@ -1,14 +1,14 @@
-import MainAuth from '@/components/Auth/MainAuth'
 import React from 'react'
 import LOGO_SECONDARY from '../../../../public/images/Biological_know_secondary.png'
+import MainAuth from '@/components/Auth/MainAuth'
+import Background from '@/components/Auth/Background'
 import Image from 'next/image'
 import Input from '@/components/General/Input'
 import InputPassword from '@/components/General/InputPassword'
 import Button from '@/components/General/Button'
 import Link from 'next/link'
-import Background from '@/components/Auth/Background'
 
-const LoginPage = () => {
+const SignupPage = () => {
   return (
     <MainAuth>
       <Background />
@@ -18,22 +18,39 @@ const LoginPage = () => {
           <h1 className='text-[32px] mt-5 mb-3'>Biological Knowledge</h1>
           <Input
             type='text'
+            name='nombre'
+            label='Nombre'
+            placeholder='Introduce tu nombre'
+          />
+          <Input
+            type='text'
             name='usuario'
             label='Usuario'
-            placeholder='Introduce tu usuario'
+            placeholder='Introduce un nombre de usuario'
+          />
+          <Input
+            type='email'
+            name='email'
+            label='Correo Electronico'
+            placeholder='Introduce un correo electronico'
           />
           <InputPassword
             name='contraseña'
             label='Contraseña'
-            placeholder='Introduce tu contraseña'
+            placeholder='Introduce una contraseña'
+          />
+          <InputPassword
+            name='confirm-contraseña'
+            label='Confirmar Contraseña'
+            placeholder='Repite la contraseña'
           />
           <div className='mt-5 text-sm flex flex-col items-center w-max m-auto gap-1 z-20 relative'>
             <Button
-              text='Iniciar Sesión'
-              primary
+              text='Registrarme'
+              secondary
               additionalClass='font-semibold'
             />
-            <Link href={'/signup'} className='text-whiteLotus'>No tengo cuenta. Registrarme</Link>
+            <Link href={'/login'} className='text-whiteLotus'>Ya tengo cuenta. Iniciar sesión</Link>
           </div>
         </div>
       </div>
@@ -41,4 +58,4 @@ const LoginPage = () => {
   )
 }
 
-export default LoginPage
+export default SignupPage
