@@ -10,14 +10,12 @@ const AboutPage = () => {
     <Main primary>
       <div className='text-base font-normal w-[710px]'>
         <Image src={LOGO_PRIMARY} alt='' className='w-[216px] h-auto m-auto'/>
-        <h1 className='font-bold text-[32px] text-center w-full my-5'>Biological knowledge</h1>
-        <h2 className='font-bold text-2xl'>Acerca de</h2>
-        <div className='flex gap-2 items-center my-2'>
-          <p className='w-[339px]'>Bienvenido a Journal of Digital Ergonomics, un espacio dedicado a explorar la relación entre la tecnología y la comodidad visual. Nuestro objetivo es compartir investigaciones, consejos y buenas prácticas para mejorar la experiencia de lectura y el diseño en pantallas digitales.</p>
-          <Image src={Example} alt='' className='w-[368px] h-[137px] object-cover rounded-lg'/>
+        <h1 className='font-bold text-[32px] text-center w-full my-8'>Biological knowledge</h1>
+        <div className='flex gap-5 items-center my-2'>
+          <p className='w-[339px] text-justify'><span className='font-bold'>Biological Knowledge</span> es un espacio diseñado para acercar la ciencia a todos. Desde académicos hasta curiosos en busca de respuestas, ofrecemos información clara, accesible y fascinante. Nuestro objetivo es despertar el interés por la ciencia y hacer del conocimiento una experiencia enriquecedora para todos.</p>
+          <Image src={Example} alt='' className='w-[368px] min-h-[137px] object-cover rounded-lg'/>
         </div>
-        <p>Este blog es dirigido por el Dr. Javier Martínez, investigador en ergonomía digital y especialista en usabilidad web. Con más de una década de experiencia en el estudio de la percepción visual y la interacción humano-computadora, busca ayudar a diseñadores, desarrolladores y usuarios a optimizar sus entornos digitales para una mejor legibilidad y menor fatiga ocular.
-        Aquí encontrarás artículos basados en estudios científicos, guías prácticas y recomendaciones para que tu tiempo frente a la pantalla sea más cómodo y eficiente. ¡Gracias por visitarnos y ser parte de esta comunidad!</p>
+        <p className='text-justify'>Nuestro blog es impulsado por un equipo de apasionados por la ciencia, comprometidos con la difusión del conocimiento y la promoción del pensamiento crítico. Nos dedicamos a explorar los descubrimientos más recientes en diversas disciplinas científicas, brindando análisis accesibles y estimulantes que invitan a la reflexión y al aprendizaje continuo. ¡Gracias por visitarnos y ser parte de esta comunidad de conocimiento! Juntos, podemos hacer que la ciencia sea más accesible, emocionante y relevante para todos.</p>
       </div>
     </Main>
   )

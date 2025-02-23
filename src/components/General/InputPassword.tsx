@@ -21,8 +21,8 @@ const InputPassword: FC<InputPasswordProps> = ({ name, label, placeholder, error
         <input type={showPassword ? 'text' : 'password'} id={name} placeholder={placeholder}
           className='w-[333px] border-primary border-2 rounded-lg px-3 py-1 text-primary font-normal text-base outline-none'
         />
-        <button className='absolute h-full right-3 flex flex-col items-center justify-center' onClick={handleShowPassword}>
-          <Icon icon={showPassword ? 'show' : 'hide'} type='solid' tailwindClass=' text-primary' />
+        <button className='absolute h-full right-3 top-1' onClick={handleShowPassword}>
+          <Icon icon={showPassword ? 'show' : 'hide'} type='solid' size='sm' tailwindClass=' text-primary' />
         </button>
         {error && <Icon type='solid' icon='message-error' tailwindClass='absolute text-redFlag text-sm -right-4 top-1' />}
       </div>
